@@ -10,7 +10,7 @@ const client = new MongoClient(MONGO_URL);
 const dbName = 'P4';
 // Use connect method to connect to the server
 await client.connect();
-console.log('Connected successfully to server');
+console.log('Connected successfully to server ');
 const db = client.db(dbName);
 const usersCollection = db.collection<modelUsuario>('users');
 const projectsCollection = db.collection<modelProyecto>("projects");
